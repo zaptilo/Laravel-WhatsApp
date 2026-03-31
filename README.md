@@ -62,7 +62,7 @@ Pass the full payload dynamically:
 
 ```php
 $response = Zaptilo::sendTemplateRaw([
-    "phone" => "+1234567890",
+    "phone" => "+91234567890",
     "template" => [
         "name" => "your_template_name",
         "language" => [
@@ -113,7 +113,7 @@ dd($response);
 
 ---
 
-### 🔁 Example in Controller
+### Example in Controller
 
 ```php
 use Zaptilo;
@@ -143,21 +143,20 @@ dd($templates);
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 * Follow WhatsApp Business API policies
 * Payload must strictly match template structure
 
 ---
 
-## 🏗️ Design Philosophy
+## Design Philosophy
 
 This package is intentionally **RAW**:
 
 * No abstraction layer
 * No assumptions
-
-👉 You have full control over request payload
+You have full control over request payload
 
 ---
 
